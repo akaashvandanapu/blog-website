@@ -1,0 +1,29 @@
+<%- include("partials/header") -%>
+
+<div class="profile-card">
+
+<div class="profile-blogs">
+    
+    <h1 class="username-profile" style="margin-bottom: 20px;">Welcome, <%= user.username %>!</h1>
+    
+    <% user.blogs.forEach(function(blog) { %>
+    <div class="blog-card">
+            <h3><%= blog.title %></h3>
+            <% if (blog.content.length > 100) { %>
+                <p><%= blog.content.substring(0, 100) + " ..." %></p>
+                <a href="/posts/<%= blog._id %>">Read more</a>
+            <% } else { %>
+                <p><%= blog.content %></p>
+            <% } %>
+
+        </div>
+        <% }); %>
+    </div>
+
+<div class="photo-profile">
+    <img class="profilePhoto" src="<%= user.profilePhotoURL %>" alt="profilephoto">
+</div>
+
+</div>
+
+<%- include("partials/footer") -%>

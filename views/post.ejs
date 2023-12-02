@@ -1,0 +1,17 @@
+<% if (typeof user === 'undefined') user = {} %>
+<%- include("partials/header") -%>
+
+<div class="post">
+
+    <div class="post-content">
+        <h1><%= title %></h1>
+        <p><%= content %></p>
+    </div>
+
+    <div class="post-image">
+        <img class="image" src=<%= imageURL %> alt="">
+    </div>
+
+</div>
+
+<%- include("partials/footer") -%>

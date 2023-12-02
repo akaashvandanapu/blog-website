@@ -1,0 +1,255 @@
+body, html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    background-color: whitesmoke; /* Set the background color to #1abc9c */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0px;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    font-weight: 500;
+    color: black !important; /* Set the text color to black */
+}
+
+.navbar-nav li a:hover {
+    color:#1abc9c !important; /* Set the text color to grey on hover */
+}
+
+.footer {
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background-color: #1abc9c;
+}
+
+.footer p {
+    padding-top: 23px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.publish {
+    background-color: #1abc9c;
+}
+
+.main {
+    position: relative;
+    color: black;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../assets/mainbackground.jpg);
+    background-size: cover;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.welcome {
+    padding-top: 25px;
+    padding-left: 100px;
+}
+
+.signup-btn,
+.login-btn {
+    font-weight: 300;
+    display: block; /* Make the buttons block-level elements */
+    width: 17rem; /* Full-width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    background-color:white;
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 50px auto 0;
+    font-size: larger; /* Increase the font size */ /* Adjust padding for a larger button */
+    margin-top: 50px; /* Add margin between the buttons */
+}
+
+.login-btn:hover{
+    background-color: gray !important;
+}
+
+.signup-btn:hover{
+    background-color: gray !important;
+}
+
+.blog-buttons{
+    flex: 1;
+    align-items: center;
+}
+
+.signup-buttons{
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-left: 125px;
+    flex: 1;
+    align-items: center;
+}
+
+.signup-buttons label{
+    font-weight: 300;
+}
+
+.signup-buttons table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.signup-buttons td {
+    padding: 5px;
+    text-align: left;
+}
+
+.signup-buttons label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup-buttons button {
+    margin-top: 10px;
+}
+
+
+
+
+.create-blog {
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-right: 100px;
+    font-size: large;
+    font-weight: 300;
+}
+
+.blog-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-img {
+    padding-top: 40px;
+    height: 9cm;
+}
+
+.main-content {
+    padding-top: 10px;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.profile-blogs{
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+.profile-photo{
+    width: 30%;
+}
+
+.profilePhoto{
+    margin-top: 40px;
+    width: 5.5cm;
+    border-radius: 50%;
+}
+.blog-card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 30px 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.image{
+    height: auto;
+    width: 12cm;
+}
+
+.post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px ;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.post-content{
+    width: 60%;
+}
+
+.post-image{
+    width: 40%;
+}
+.home  {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px 30px;
+    gap: 40px;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+
+.title-card{
+    width: 30%;
+}
+.profile-post-content{
+    width: 70%;
+    padding: 55px 0px 30px 0;
+}
+.user-img{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin: 20px;
+}
+
+.about-profile-cards{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 25%;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 2%;
+}
+.about-us{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
